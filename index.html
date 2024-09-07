@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Inventory Management System</h1></header>
+  
+<div id="table wrapper"><table id="inventoryTable">
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table></div>
+  
+
+  <div class="product-form">
+    <h2>Add New Product</h2>
+    <form id="form">
+    <input type="text" id="productName" placeholder="Product Name" required>
+    <input type="number" id="productQuantity" placeholder="Quantity" required>
+    <input type="number" id="productPrice" placeholder="Price" required>
+    <button type="submit" id="addProductButton">Add Product</button>
+  </form>
+  <div id="error-message" style="color: red;"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+<footer>
+  <p>created by GIAIC student <b>Naimal Salahuddin</b></p>
+</footer>
+</html>

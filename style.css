@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    
+}
+h1, h2 {
+    text-align: center;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+header {
+    padding: 4px;
+    background-color:black;
+}
+
+th,td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(148, 152, 197);
+}
+tr:nth-child(odd){
+    background-color: bisque;
+}
+
+th {
+ background-color: rgba(141, 141, 161, 0.452);
+ margin-bottom: 20px;
+}
+.product-form {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 15px; /* Space between input fields */
+    flex-wrap: wrap;
+    
+}
+
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    background-color:black;
+    color: white;
+    padding: 3px;
+}
+
+/*  Base Styles for Input Fields */ 
+input {
+  margin: 11px ; /* Add vertical margin to create spacing between input fields */
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Layout for Desktop Screens */
+@media (min-width: 769px) {
+    .product-form {
+        flex-direction: row; /* Display inputs in a row on larger screens */
+    }
+}
+
+/* Layout for Mobile Screens */
+@media (max-width: 768px) {
+    .product-form {
+        flex-direction: column; /* Stack inputs vertically on smaller screens */
+    }
+    
+    input {
+        margin: 15px 0; /* Add vertical margin to create spacing between input fields */
+    }
+
+    button {
+        margin-top: 20px;
+        align-items: center;
+    }
+}
